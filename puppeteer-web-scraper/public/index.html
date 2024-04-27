@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppeteer Web Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Puppeteer Web Scraper</h1>
+        <form id="searchForm">
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required><br><br>
+            <label for="selector">Selector:</label>
+            <input type="text" id="selector" name="selector" required><br><br>
+            <label for="filter">Filter:</label>
+            <input type="text" id="filter" name="filter"><br><br>
+            <button type="submit">Scrape</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
